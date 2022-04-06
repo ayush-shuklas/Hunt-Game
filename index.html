@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      const displayfunc = function (message) {
+        document.querySelector(".message").textContent = message;
+
+        
+      };
+
+     
+      hun = 100;
+      var cur1 = hun,
+        cur2 = hun;
+      var i = 1;
+      var f = 0,
+        s = 0;
+
+      function flames1() {
+        if (i <= 5) {
+          const dice = Math.trunc(Math.random() * 5);
+          document.querySelector(".scorer").textContent =
+              dice;
+
+          // var yname = document.getElementById("yname").value;
+          if (cur2 > 0) {
+            cur2 = cur2 - dice;
+            if (cur2 <= 0) {
+              cur2 = 0;
+            }
+          } else cur2 = 0;
+          // console.log(cur1, cur2);
+          document.querySelector(".score1").textContent = cur1;
+          document.querySelector(".score2").textContent = cur2;
+          // round1
+          if (cur1 <= 0 && i == 1) {
+            document.querySelector(".score11").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 1) {
+            document.querySelector(".score11").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round2
+          if (cur1 <= 0 && i == 2) {
+            document.querySelector(".score12").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 2) {
+            document.querySelector(".score12").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round3
+          if (cur1 <= 0 && i == 3) {
+            document.querySelector(".score13").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 3) {
+            document.querySelector(".score13").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round4
+          if (cur1 <= 0 && i == 4) {
+            document.querySelector(".score14").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 4) {
+            document.querySelector(".score14").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round5
+          if (cur1 <= 0 && i == 5) {
+            document.querySelector(".score15").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 5) {
+            document.querySelector(".score15").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+
+          
+        }
+      }
+      function flames2() {
+        if (i <= 5) {
+          const dice = Math.trunc(Math.random() * 5) + 1;
+          document.querySelector(".scorer").textContent =
+              dice;
+          // var yname = document.getElementById("yname").value;
+          if (cur1 > 0) {
+            cur1 = cur1 - dice;
+            if (cur1 <= 0) {
+              cur1 = 0;
+            }
+          } else cur1 = 0;
+          // console.log(cur1, cur2);
+          document.querySelector(".score1").textContent = cur1;
+          document.querySelector(".score2").textContent = cur2;
+
+          // round 1
+          if (cur1 <= 0 && i == 1) {
+            document.querySelector(".score11").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 1) {
+            document.querySelector(".score11").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round2
+          if (cur1 <= 0 && i == 2) {
+            document.querySelector(".score12").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 2) {
+            document.querySelector(".score12").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round3
+          if (cur1 <= 0 && i == 3) {
+            document.querySelector(".score13").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 3) {
+            document.querySelector(".score13").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round4
+          if (cur1 <= 0 && i == 4) {
+            document.querySelector(".score14").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 4) {
+            document.querySelector(".score14").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          // round5
+          if (cur1 <= 0 && i == 5) {
+            document.querySelector(".score15").textContent =
+              "Player2 won the round";
+            s++;
+            document.querySelector(".score62").textContent = s;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+          if (cur2 <= 0 && i == 5) {
+            document.querySelector(".score15").textContent =
+              "Player1 won the round";
+            f++;
+            document.querySelector(".score61").textContent = f;
+            i++;
+            cur1 = hun;
+            cur2 = hun;
+          }
+
+        }
+      }
+
+      function flames3() {
+        if (i > 5) {
+          if (f > s) {
+            document.querySelector(
+              ".score6"
+            ).textContent = `Player1 won the Match by ${f} -${s} `;
+          } else {
+            document.querySelector(
+              ".score6"
+            ).textContent = `Player2 won the Match by ${s} - ${f}`;
+          }
+        }
+      }
+    </script>
+  
+
+
+    </script> -->
+  </head>
+
+  <body>
+    <center>
+      <h1>
+       Karthika's
+        <b>
+          <font color="blue">H</font>
+          <font color="red">.</font>
+          <font color="green">U</font>
+          <font color="pink">.</font>
+          <font color="orange">N</font>
+          <!-- <font color="purple">.</font>
+          <font color="yellow">N</font> -->
+          <font color="red">.</font>
+          <font color="violet">T</font>
+        </b>
+        Game
+      </h1>
+    </center>
+   
+    <center>
+      
+      <button onclick="flames1()">Player1</button>
+      <br /><br /><br /><br />
+      <button onclick="flames2()">Player2</button>
+      <br />
+      <hr />
+
+      <button onclick="flames3()">click h<b>ere to see f</b>inal result</button>
+      <br />
+      <hr />
+      <main>
+
+        <section class="right">
+          <!-- <p class="message">Player 1 health :</p> -->
+          <p class="label-score">💯 Health Reduced : <span class="scorer">0</span></p>
+          
+        </section>
+       
+         
+        <section class="right">
+          <p class="message">Player 1 health :</p>
+          <p class="label-score">💯 Health: <span class="score1">100</span></p>
+          
+        </section>
+        <section class="right">
+          <p class="message">Player 2 health :</p>
+          <p class="label-score">💯 Health: <span class="score2">100</span></p>
+          
+        </section>
+        <p class="label-score">
+          <b>Result of round 1</b> : <span class="score11">Not Declared</span>
+        </p>
+        <p class="label-score">
+          <b>Result of round 2</b> : <span class="score12">Not Declared</span>
+        </p>
+        <p class="label-score">
+          <b>Result of round 3</b> : <span class="score13">Not Declared</span>
+        </p>
+        <p class="label-score">
+          <b>Result of round 4</b> : <span class="score14">Not Declared</span>
+        </p>
+        <p class="label-score">
+          <b>Result of round 5</b> : <span class="score15">Not Declared</span>
+        </p>
+        <p class="label-score">
+         
+          <br /><br />
+          <b>Player 1</b> : <span class="score61">0</span><br /><br />
+          <b>Player 2</b> : <span class="score62">0</span>
+          <br><br>
+          <b>Final Result</b> : <span class="score6">Not Declared</span
+        </p>
+      </main>
+    </center>
+  </body>
+</html>
+
+
